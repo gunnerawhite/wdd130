@@ -1,0 +1,35 @@
+h1{color:red;
+font: size 300%;
+text-align: center;
+}
+header{
+    text-align: center;
+}
+p {
+    border: 2px solid rgb(9, 194, 21);
+    padding: 30px;
+    margin: 50px;
+    color:blue;
+    font: size 32px;
+    text-align: left;
+}
+footer {
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    color: purple;
+    border: 2px solid black;
+    font: size 32px;
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid rgb(9, 194, 21);
+    padding: 10px;
+}
+body{
+    background-color:lightblue;
+}
