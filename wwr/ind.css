@@ -1,3 +1,52 @@
-.head{
-    text-align: center;
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: -100px;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+
+}
+#hero-box img{
+    width:100%;
+}
+.hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 6fr 2fr 2fr 1fr 6fr 1fr 1fr 2fr;
+}
+.home-grid img{
+    width: 100%;
+}
+.pics{
+    width: 20%;
+}
+footer{
+    background-color: White;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
