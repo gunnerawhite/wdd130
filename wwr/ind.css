@@ -4,6 +4,13 @@
 }
 body{
     background-color: lightskyblue;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin:0;
 }
 header{
     background-color: lightyellow;
@@ -13,6 +20,15 @@ header{
 nav{
     display: flex;
     justify-content: space-around;
+}
+.msg{
+    background-color: White;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.home-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
 }
 .logo_link{
     padding-top: 5px;
@@ -55,9 +71,24 @@ nav{
 .home-grid img{
     width: 100%;
 }
+.first-image, .second-image, .third-image{  
+    border: 5px solid rgb(169, 98, 53);
+    margin: 0 auto;
+}
 .pics{
     width: 100%;
-
+}
+.card-image{
+    border: 10px solid #d9c2a3;
+}
+.book, .join {
+    border-radius: 5px;
+    background-color: #60441f;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 #links{
     text-align: center;
