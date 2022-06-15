@@ -27,6 +27,17 @@ nav{
     line-height: 1.5em;
     padding: 35px;
 }
+.button-box, .button-box-main{
+    background-color: rgba(183, 122, 72, 0.699);
+    width: 100px;
+    margin:0 auto;
+    text-align: center;
+    justify-content: center;
+}
+.button-box:hover, .button-box-main:hover{
+    background-color: aqua;
+    color: black;
+}
 .home-title{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
@@ -82,6 +93,9 @@ nav{
 #raft{
     width: 10em;
 }
+#raft:hover{
+    width:11em;
+}
 #raft_logo{
     width: 2em;
 }
@@ -92,6 +106,9 @@ nav{
 }
 #camping{
     width: 9em;
+}
+#camping:hover{
+    width: 10em;
 }
 #camping_logo{
     width: 2em;
@@ -105,6 +122,9 @@ nav{
 #hiking{
     width: 10em;
 }
+#hiking:hover{
+    width:11em;
+}
 #hiking_logo{
     width:2.5em;
 }
@@ -115,11 +135,12 @@ nav{
 }
 .space{
     grid-column: 6/9;
-    grid-row: 6
+    grid-row: 6;
+
 }
 .big_image{
-    grid-column: 2/7;
-    grid-row: 6;
+    grid-column: 1/-1;  
+    grid-row: 4/9;
     z-index: -1;
 }
 .pics{
@@ -141,6 +162,7 @@ nav{
     text-align: center;
     color: darksalmon;
     text-decoration: none;
+    font-size: .5em;
 }
 footer{
     background-color: White;
@@ -151,8 +173,8 @@ footer{
     align-items: center;
 }
 footer p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
-footer p a:hover{
-    text-decoration: underline;
+#links:hover{
+    color: grey;
 }
