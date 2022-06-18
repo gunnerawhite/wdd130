@@ -164,6 +164,72 @@ nav{
     text-decoration: none;
     font-size: .5em;
 }
+.main_box{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-gap: 5px;
+    background-color: white;
+}
+.price_one{
+    background: grey;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price_one_extra{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: lightgrey;
+    text-align: center;
+}
+.price_two{
+    background: rgb(68, 150, 68);
+    grid-column:1/2;
+    grid-row: 2/3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price_two_extra{
+    background: rgb(110, 110, 255);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+.price_three{
+    background:rgb(169, 98, 53);
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price_three_extra{
+    background: white;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+}
+.scene_image{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.side_section{
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+#tree{
+    width: 100%;
+    height: 100%;
+
+}
 footer{
     background-color: White;
     padding: 25px 50px;
