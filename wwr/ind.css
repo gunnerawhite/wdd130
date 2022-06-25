@@ -172,10 +172,9 @@ nav{
     background-color: white;
 }
 .price_one{
-    background: grey;
+    background: rgb(236, 178, 116);
     grid-row: 1/2;
     grid-column: 1/2;
-    height: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -184,11 +183,11 @@ nav{
 .price_one_extra{
     grid-column: 2/3;
     grid-row: 1/2;
-    background: lightgrey;
+    background: rgb(169, 98, 53);
     text-align: center;
 }
 .price_two{
-    background: rgb(68, 150, 68);
+    background: rgb(236, 178, 116);
     grid-column:1/2;
     grid-row: 2/3;
     text-align: center;
@@ -197,13 +196,13 @@ nav{
     justify-content: space-between;
 }
 .price_two_extra{
-    background: rgb(110, 110, 255);
+    background: rgb(169, 98, 53);
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
 }
 .price_three{
-    background:rgb(169, 98, 53);
+    background:rgb(236, 178, 116);
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
@@ -212,7 +211,7 @@ nav{
     justify-content: space-between;
 }
 .price_three_extra{
-    background: white;
+    background: rgb(169, 98, 53);
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
@@ -224,6 +223,7 @@ nav{
 .side_section{
     grid-row: 2/4;
     grid-column: 3/4;
+    background-color: rgb(236, 178, 116);
 }
 #tree{
     width: 100%;
@@ -231,7 +231,7 @@ nav{
 
 }
 footer{
-    background-color: White;
+    background-color: lightyellow;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
