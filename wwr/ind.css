@@ -33,10 +33,20 @@ nav{
     margin:0 auto;
     text-align: center;
     justify-content: center;
+    box-shadow: 5px 5px black;
 }
 .button-box:hover, .button-box-main:hover{
     background-color: aqua;
     color: black;
+}
+.button-box-secondary{
+    background-color:rgb(159, 114, 66);
+    color: black;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px black;
 }
 .home-title{
     font-family: 'Courier New', Courier, monospace;
@@ -136,7 +146,7 @@ nav{
 .space{
     grid-column: 6/9;
     grid-row: 6;
-
+    background-color:rgba(183, 122, 72, 0.699);
 }
 .big_image{
     grid-column: 1/-1;  
@@ -160,7 +170,7 @@ nav{
 }
 #links{
     text-align: center;
-    color: darksalmon;
+    color: rgb(176, 124, 69);
     text-decoration: none;
     font-size: .5em;
 }
