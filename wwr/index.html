@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="ind.css">
     <link rel="images" href="images">
     <title>White Water Rafting</title>
-    
+    <script>
+          function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+    </script>
 </head>
 <body>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+      
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span id="side-bar" onclick="openNav()">More</span>
     <div id="content">
         <header>
             <a class="logo" href="index.html">
@@ -37,6 +61,7 @@
             </section>
         </div>
         <main class="home-grid">
+
             <section class="first-image">
                 <img id="raft" src="images/Rafting_image_3.jpg" alt="Rafting">
                 <img id="raft_logo" src="images/oar.jpg" alt="rafting logo">
