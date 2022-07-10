@@ -1,0 +1,103 @@
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(54, 54, 54);
+    margin: fill;
+    height: 200px;
+}
+#Head{
+    grid-column: 1/2;
+    font:bold;
+    text-align: center;
+    margin: auto;
+}
+#Top{
+    grid-column: 2/3;
+    font:bold;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+#New{
+    grid-column: 3/4;
+    font:bold;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+#Logo_child_box{
+    grid-column: 4/5;
+    text-align: center;
+    justify-content:center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+#Logo_child{
+    border-radius:50%;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+main{
+    display:grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: black;
+}
+#Overwatch_p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: larger;
+    color: white;
+}
+#Overwatch{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+}
+#Minecraft_para{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: larger;
+    color: white;
+}
+#Minecraft{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+#Elden_ring_p{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: larger;
+    color: white;
+}
+#Elden_ring{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+#Friends_box{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    margin-left: 5px;
+}
+#Friends{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
