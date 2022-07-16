@@ -4,6 +4,13 @@ header{
     background-color: rgb(54, 54, 54);
     margin: fill;
     height: 200px;
+    width: 100%;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color:rgb(54, 54, 54);
+    height: 50px;
 }
 #Head{
     grid-column: 1/2;
@@ -41,7 +48,7 @@ header{
     margin: auto;
     text-align: center;
 }
-main{
+#main_child_1{
     display:grid;
     grid-template-columns: 2fr 1.5fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -98,6 +105,92 @@ main{
 }
 #Friends{
     object-fit: fill;
+    /* height: 100%; */
+    /* width: 100%; */
+    max-width: 900px;
+    overflow: hidden;
+}
+.container_comment {
+	max-width: 640px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+button.primaryContained:hover {
+	background: #9201A8;
+}
+p{
+    color:black;
+}
+#main_child_2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    background: black;
     width: 100%;
-    height: 100%;
+}
+#new_header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+#Vrising_img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+#Vrising{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 3px solid rgba(0, 255, 30, 0.833);
+}
+#Lego_img{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+#Lego{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 3px solid rgba(0, 255, 30, 0.833);
+}
+#Tiny_img{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+#Tiny{
+    grid-column: 2/3;
+    grid-row: 7/8;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 3px solid rgba(0, 255, 30, 0.833);
+}
+p{
+   color: white;
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }

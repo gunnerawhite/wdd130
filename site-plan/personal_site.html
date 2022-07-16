@@ -5,8 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="personal_site.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 <body>
-    
+    <header>
+        <h1 id="Head">HEAD</h1>
+        <h1 id="Top">Top Games</h1>
+        <h1 id="New">New Games</h1>
+        <div id="Logo_child_box">
+        <img id="Logo_child" src="img/games.png" alt="Logo">
+        </div>
+    </header>
+        <main>
+            <div id="main_img">
+                <img src="img/Game_image_main.jpg" alt="Main_image">
+            </div>
+            <section id="Section_left">
+                <p>Welcome to Pitch White Games! The most reliable site for pro-gaming and casual gaming alike. Feel free to take a look at what the most popular games are, or check out some of the newest games this month.</p>
+            </section>
+            <section id="Comment_section">
+                <p>If you feel there are some games we havent covered yet, please leave a comment and let us know what we should cover.</p>
+            </section>
+            <section id="app">
+                <div class="container_comment">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="comment">
+                    <p v-for="items in item" v-text="items"></p>
+                      </div><!--End Comment-->
+                      </div><!--End col -->
+                      </div><!-- End row -->
+                  <div class="row">
+                    <div class="col-6">
+                  <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                      <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                    </div><!-- End col -->
+                  </div><!--End Row -->
+                </div><!--End Container -->
+              </section><!-- end App -->
+        </main>    
+        <footer>
+            <a href="#">Link for stuff</a>
+            <a href="#">Link for stuff</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Link for stuff</a>
+            <a href="#">Link for stuff</a>
+        </footer>
+    <script>
+        $(document).ready(function(){ 
+ 
+ $(".primaryContained").on('click', function(){
+ $(".comment").addClass("commentClicked");
+});//end click
+$("textarea").on('keyup.enter', function(){
+ $(".comment").addClass("commentClicked");
+});//end keyup
+});//End Function
+
+new Vue({
+ el: "#app",
+ data:{
+    title: 'Add a comment',
+   newItem: '',
+   item: [],
+ },
+ methods:{
+   addItem  (){
+   this.item.push(this.newItem);
+     this.newItem = "";
+   }
+}
+
+});
+    </script>
 </body>
 </html>
