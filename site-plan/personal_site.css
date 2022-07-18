@@ -6,17 +6,46 @@ header{
     height: 200px;
     width: 100%;
 }
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    z-index: -1;
+}
+#main_img{
+grid-column: 1/4;
+grid-row: 1/2;
+}
+#app, #Comment_section{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    z-index: 1;
+}
+#Comment_section{
+    margin: 0 auto; 
+}
+#app{
+    margin-top: 10px;
+}
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color:rgb(54, 54, 54);
-    height: 50px;
+    height: 100px;
 }
-#Head{
+#Home{
     grid-column: 1/2;
     font:bold;
     text-align: center;
     margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+#Home:hover{
+    background-color: #bdb76b;
+    color: black;
 }
 #Top{
     grid-column: 2/3;
@@ -24,6 +53,13 @@ footer{
     text-align: center;
     justify-content: center;
     margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+#Top:hover{
+    background-color: #bdb76b;
+    color: black;
 }
 #New{
     grid-column: 3/4;
@@ -31,6 +67,13 @@ footer{
     text-align: center;
     justify-content: center;
     margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+#New:hover{
+    background-color: #bdb76b;
+    color: black;
 }
 #Logo_child_box{
     grid-column: 4/5;
@@ -113,9 +156,10 @@ footer{
 .container_comment {
 	max-width: 640px;
 	margin: 30px auto;
-	background: #fff;
+	background: rgb(54, 54, 54);
 	border-radius: 8px;
 	padding: 20px;
+    margin-bottom: 10px;
 }
 button.primaryContained:hover {
 	background: #9201A8;
@@ -129,6 +173,25 @@ p{
     grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     background: black;
     width: 100%;
+}
+#Section_left{
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;;
+    width: 100%;
+    z-index: 1;
+}
+#BG{
+    background-color: #3d348b;
+    z-index: 0;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 #new_header{
     grid-column: 2/3;
